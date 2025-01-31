@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palaute</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <form action="/palaute" method="POST">
+        <h1>Anna palautetta</h1>
+
+        <label for="nimi">Nimi:</label>
+        <input type="text" id="nimi" name="nimi" placeholder="Esimerkiksi: Matti Meikäläinen" required>
+
+        <label for="sahkoposti">Sähköposti:</label>
+        <input type="email" id="sahkoposti" name="sahkoposti" placeholder="Esimerkiksi: matti@esimerkki.com" required>
+
+        <label for="palaute">Palaute:</label>
+        <textarea id="palaute" name="palaute" rows="5" placeholder="Kirjoita palautteesi tähän..." required></textarea>
+
+        <button type="submit">Lähetä</button>
+    </form>
+</body>
+</html>

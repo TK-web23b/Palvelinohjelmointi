@@ -1,0 +1,89 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #333333;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Lomake */
+form {
+    background-color: #4B1F26;
+    border-radius: 10px;
+    padding: 30px;
+    width: calc(100% - 40px);
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Lomakkeen otsikko */
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Labelit */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #E0E0E0;
+}
+
+/* Syöttökentät ja tekstialue */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Syöttökenttien hover */
+input:focus, textarea:focus {
+    border-color: #C32D4C;
+    outline: none;
+}
+
+/* Lähetäpainike */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Lähetäpainikkeen hover */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* virheilmoitukset */
+input:invalid, textarea:invalid {
+    border-color: #C32D4C;
+}
+
+/* Esimerkkiteksti */
+input::placeholder, textarea::placeholder {
+    color: #888;
+    font-style: italic;
+}
